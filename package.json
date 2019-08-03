@@ -1,0 +1,42 @@
+{
+  "name": "es6-better-debugging",
+  "version": "0.0.1",
+  "description": "Demo project to showcase ",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IKoshelev/es6-better-debugging"
+  },
+  "keywords": [
+    "debugging",
+    "es6",
+    "blackboxing",
+    "bundle-splitting",
+    "code-splitting"
+  ],
+  "dependencies": {
+    "es6-promise": "^4.2.5",
+    "lodash": "^4.17.11",
+    "mobx": "^4.9.2",
+    "mobx-react": "^5.0.0",
+    "mobx-react-devtools": "^5.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react-dom": "^16.8.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "webpack": "^4.0.0",
+    "webpack-dev-server": "^3.0.0"
+  }
+}
