@@ -17,21 +17,13 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     optimization: {
-        // More on the configuration on splitting:
-        // https://gist.github.com/sokra/1522d586b8e5c0f5072d7565c2bee693#configurate-cache-groups
-        // https://wanago.io/2018/06/04/code-splitting-with-splitchunksplugin-in-webpack-4/
         splitChunks: {
             cacheGroups: {
-                default: {
-                    minChunks: 1,
-                    priority: -20,
-                    reuseExistingChunk: true,
-                },
-                /*change the name prop name to change bundle name*/
                 vendors: {
                     test: /[\\/]node_modules[\\/]/,
-                    minChunks: 1,
-                    priority: -10
+                    name: 'vendors',
+                    enforce: true,
+                    chunks: 'all'
                 }
             }
         }
@@ -48,7 +40,7 @@ module.exports = {
                             ['@babel/preset-env', {
                                 "targets": {
                                     //"chrome": 1,
-                                    "chrome": 72
+                                    "chrome": 52
                                 }
                             }],
                             '@babel/preset-react'
