@@ -40,7 +40,7 @@ module.exports = {
                             ['@babel/preset-env', {
                                 "targets": {
                                     //"chrome": 1,
-                                    "chrome": 52
+                                    "chrome": 60
                                 }
                             }],
                             '@babel/preset-react'
